@@ -35,39 +35,6 @@ body .content .desktop button img {
   height: 5rem;
   width: 5rem;
 }
-body .content .desktop .gallery {
-  display: none; /* Hidden by default */
-}
-body .content .desktop .gallery--clicked {
-  display: flex;
-  position: relative; /* According to the regular document flow */
-  z-index: 1; /* Sit on top */
-  padding: 1rem 2rem;
-  width: max-content;
-  height: max-content;
-  border-radius: 2rem;
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-body .content .desktop .gallery--clicked .modal-content .close {
-  color: black;
-  background-color: #749ef8;
-  padding: 0 0.5rem 0 0.5rem;
-  border-radius: 10%;
-  float: right;
-  font-size: 2rem;
-  text-shadow: 1px 1px 1px white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-body .content .desktop .gallery--clicked .modal-content .close:hover, body .content .desktop .gallery--clicked .modal-content .close:focus {
-  background-color: #215cd8;
-  text-decoration: none;
-  cursor: pointer;
-}
-body .content .desktop .gallery img {
-  height: 10rem;
-  width: 15rem;
-  padding: 0 0.5rem 0 0.5rem;
-}
 body .content .desktop .form {
   display: none;
 }
@@ -114,6 +81,39 @@ body .content .desktop .form--clicked .close:hover, body .content .desktop .form
   background-color: #215cd8;
   text-decoration: none;
   cursor: pointer;
+}
+body .content .desktop .gallery {
+  display: none; /* Hidden by default */
+}
+body .content .desktop .gallery--clicked {
+  display: flex;
+  position: relative; /* According to the regular document flow */
+  z-index: 1; /* Sit on top */
+  padding: 1rem 2rem;
+  width: max-content;
+  height: max-content;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+body .content .desktop .gallery--clicked .modal-content .close {
+  color: black;
+  background-color: #749ef8;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 10%;
+  float: right;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body .content .desktop .gallery--clicked .modal-content .close:hover, body .content .desktop .gallery--clicked .modal-content .close:focus {
+  background-color: #215cd8;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .content .desktop .gallery img {
+  height: 10rem;
+  width: 15rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 body .content footer {
   background-image: linear-gradient(#749ef8, #215cd8, #215cd8, #215cd8);
