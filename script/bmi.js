@@ -2,7 +2,7 @@
 // bmi function
 
 const bmi = (weight, height) => {
-    let bmindex =  +((weight/(height**2)).toFixed(1));
+    let bmindex =  +((weight/((height/100)**2)).toFixed(1));
     
     if (bmindex<=18.4){
             return `Your body mass index is ${bmindex}\n Status: underweight`}
@@ -19,4 +19,4 @@ const bmi = (weight, height) => {
     }
     }
 
-console.log(bmi(58, 1.65))
+console.log(bmi(58, 165))

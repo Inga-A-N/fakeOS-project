@@ -16,9 +16,18 @@
         <div class="desktop" id="desktop">
 
             <div class="folder">
-                <button class="folder folder--top-secret" id="topSecret">
+                <button type="button" class="folder folder--top-secret" id="topSecret">
                     <img src="./styles/assets/icons8-top-secret-folder.svg" alt="Top secret folder">
                 </button>
+                <form class="form">
+                    <h1>BMI Calculator</h1>
+                    <label for="weight">Weight: </label>
+                    <input type="text" placeholder="Weight in kg" name="weight" id="weight">
+                    <label for="height">Height: </label>
+                    <input type="text" placeholder="Height in cm" name="height" id="height">
+                    <input type="submit" class="submit" value="Calculate">
+                    <div class="message" id="message"></div>
+                </form>
             </div>
             
 
