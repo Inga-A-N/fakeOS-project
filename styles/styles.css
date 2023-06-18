@@ -35,17 +35,50 @@ body .content .desktop button img {
   height: 5rem;
   width: 5rem;
 }
+body .content .desktop .gallery {
+  display: none; /* Hidden by default */
+}
+body .content .desktop .gallery--clicked {
+  display: flex;
+  position: relative; /* According to the regular document flow */
+  z-index: 1; /* Sit on top */
+  padding: 1rem 2rem;
+  width: max-content;
+  height: max-content;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+body .content .desktop .gallery--clicked .modal-content .close {
+  color: black;
+  background-color: #749ef8;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 10%;
+  float: right;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body .content .desktop .gallery--clicked .modal-content .close:hover, body .content .desktop .gallery--clicked .modal-content .close:focus {
+  background-color: #215cd8;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .content .desktop .gallery img {
+  height: 10rem;
+  width: 15rem;
+  padding: 0 0.5rem 0 0.5rem;
+}
 body .content .desktop .form {
   display: none;
 }
 body .content .desktop .form--clicked {
-  height: 20rem;
+  height: 25rem;
   width: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 0.3rem;
-  background-color: lightgray;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   border-radius: 5%;
   margin-top: 1rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -61,6 +94,26 @@ body .content .desktop .form--clicked h1 {
 }
 body .content .desktop .form--clicked p {
   text-align: center;
+  background-color: rgba(128, 128, 128, 0.4);
+  color: aliceblue;
+  padding: 1rem;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px black;
+}
+body .content .desktop .form--clicked .close {
+  color: black;
+  background-color: #749ef8;
+  align-self: flex-end;
+  margin: 2%;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 10%;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
+}
+body .content .desktop .form--clicked .close:hover, body .content .desktop .form--clicked .close:focus {
+  background-color: #215cd8;
+  text-decoration: none;
+  cursor: pointer;
 }
 body .content footer {
   background-image: linear-gradient(#749ef8, #215cd8, #215cd8, #215cd8);

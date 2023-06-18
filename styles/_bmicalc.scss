@@ -6,13 +6,13 @@
     
 
     &--clicked{
-        height: 20rem;
+        height: 25rem;
         width: 20rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         row-gap: 0.3rem;
-        background-color: lightgray;
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */;
         border-radius: 5%;
         margin-top: 1rem;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -30,6 +30,30 @@
 
         p {
             text-align: center;
+            background-color: rgb(128, 128, 128, 0.4);
+            color: aliceblue;
+            padding: 1rem;
+            border-radius: 50%;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .close {
+            color: black;
+            background-color: #749ef8;
+            align-self: flex-end;
+            margin: 2%;
+            padding: 0 0.5rem 0 0.5rem;
+            border-radius: 10%;
+            // float: right;
+            font-size: 2rem;
+            text-shadow: 1px 1px 1px white;
+
+            &:hover,
+            &:focus {
+            background-color: #215cd8;
+            text-decoration: none;
+            cursor: pointer;
+            }
         }
     }
 }

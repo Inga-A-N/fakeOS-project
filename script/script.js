@@ -20,31 +20,62 @@ const bmi = (weight, height) => {
 
 //DOM
 
-//Making top secret folder button display bmi calculator
+
 
 const topSecret = document.querySelector("#topSecret");
 
 console.log(topSecret)
 
 const form = document.querySelector(".form");
+console.log(form)
 
 const messageDiv = document.querySelector("#message");
 console.log(messageDiv.children);
 
+const star = document.querySelector("#star")
+console.log(star)
 
-console.log(form)
+const gallery = document.querySelector(".gallery")
+console.log(gallery)
+
+const close = document.querySelectorAll(".close")
+console.log(close)
+
+const closeSecret = close[0];
+console.log(closeSecret)
+
+const closeStar = close[1];
+//Making top secret folder button display/close bmi calculator and x close it
 
 topSecret.addEventListener("click", () => {
 
     if (messageDiv.children.length > 0) {
         messageDiv.removeChild(document.querySelector("#msg"));
     }
-    
+
     form.classList.toggle("form--clicked")
     console.log(form)
 })
 
+closeSecret.addEventListener("click", () => {
 
+    form.classList.remove("form--clicked")
+    console.log(gallery)
+})
+
+// Making star folder button open and close gallery and X close gallery
+
+star.addEventListener("click", () => {
+
+    gallery.classList.toggle("gallery--clicked")
+    console.log(gallery)
+})
+
+closeStar.addEventListener("click", () => {
+
+    gallery.classList.remove("gallery--clicked")
+    console.log(gallery)
+})
 
 
 
@@ -84,6 +115,8 @@ form.addEventListener("submit", (event) => {
     form.reset();
 
 })
+
+
 
 
     

@@ -1,0 +1,12 @@
+.gallery {
+    
+    display: flex;
+
+    border: 2px solid green;
+    
+        img {
+            border: 2px solid red;
+            height: 3rem;
+            width: 10rem;
+        }
+    }
