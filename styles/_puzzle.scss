@@ -1,0 +1,83 @@
+.riddle {
+
+    display: none; /* Hidden by default */
+
+    &--clicked {
+
+    height: 25rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute; /* According to the regular document flow */
+    left: 10%;
+    top: 35%;
+    z-index: 1; /* Sit on top */
+    padding: 1rem 2rem;
+    border-radius: 2rem; 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    align-items: center;
+    margin-top: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    // text-shadow: 2px 1px white;
+
+    h2 {
+        background-color: gray;
+        // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: aliceblue;
+        padding: 1rem;
+        margin-top: 0;
+        border-radius: 50%;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    label {
+        text-align: center;
+        background-color: rgb(128, 128, 128, 0.6);
+        color: aliceblue;
+        padding: 2rem;
+        border-radius: 50%;
+        text-shadow: 2px 2px 2px black;
+    }
+
+        
+
+        .close {
+            color: black;
+            background-color: #749ef8;
+            padding: 0 0.5rem 0 0.5rem;
+            border-radius: 10%;
+            align-self: flex-end;
+            // float: right;
+            font-size: 2rem;
+            text-shadow: 1px 1px 1px white;
+            
+
+            &:hover,
+            &:focus {
+            background-color: #215cd8;
+            text-decoration: none;
+            cursor: pointer;
+            }
+        }
+
+        .buttons {
+
+            display: flex;
+            align-content: end;
+
+            .answer{
+                margin: 1rem;
+                height: 2rem;
+                width: max-content;
+                background-color: rgb(225, 225, 225);
+                box-shadow: 1px 1px gray;
+                &:hover {
+                    background-color: rgb(189, 189, 189);
+                    box-shadow: 2px 2px rgb(92, 92, 92);
+                }
+            }
+        }
+    }
+    
+}

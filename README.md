@@ -7,8 +7,8 @@ The design is going to be that of an operating system.
 Please look at the provided image gallery for examples. You should choose either a portrait (mobile) or landscape (desktop) operating system, you are not expected to create a responsive page that works on both, however it should look good on the chosen orientation at different resolutions/ratios. You will select one of the provided images, or your own as approved by a coach.
 
 Features
-You will be creating an SPA (Single Page Application)
-Desktop has a wallpaper that fits the viewport
+-V- You will be creating an SPA (Single Page Application)
+-V- Desktop has a wallpaper that fits the viewport
 There will be selectable icons
 Selecting an icon will open an "app", creating a modal to display some content
 Able to close an app
@@ -17,8 +17,8 @@ Selecting the menu will display a list of text and icons
 The current time is displayed somewhere
 MVP:
 HTML/SCSS
-Wallpaper scales to fit the viewport
-Minimum 3 icons on desktop
+-V- Wallpaper scales to fit the viewport
+-V- Minimum 3 icons on desktop
 The menu is positioned in the appropriate place (bottom left on windows, top of the screen on android)
 Apps look consistent
 Menu contains a flex with content inside it

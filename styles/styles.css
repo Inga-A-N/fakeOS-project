@@ -43,19 +43,28 @@ body .content .desktop .form--clicked {
   width: 20rem;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  left: 10%;
   align-items: center;
   row-gap: 0.3rem;
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   border-radius: 5%;
   margin-top: 1rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 3px;
-  text-shadow: 2px 2px 2px white;
+  color: aliceblue;
 }
 body .content .desktop .form--clicked h1 {
   background-color: gray;
   color: aliceblue;
   padding: 1rem;
+  margin-top: 0;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px black;
+}
+body .content .desktop .form--clicked label {
+  background-color: gray;
+  padding: 2%;
   border-radius: 50%;
   text-shadow: 2px 2px 2px black;
 }
@@ -87,13 +96,15 @@ body .content .desktop .gallery {
 }
 body .content .desktop .gallery--clicked {
   display: flex;
-  position: relative; /* According to the regular document flow */
+  position: absolute; /* According to the regular document flow */
+  left: 35%;
   z-index: 1; /* Sit on top */
   padding: 1rem 2rem;
   width: max-content;
   height: max-content;
   border-radius: 2rem;
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif, sans-serif;
 }
 body .content .desktop .gallery--clicked .modal-content .close {
   color: black;
@@ -103,7 +114,6 @@ body .content .desktop .gallery--clicked .modal-content .close {
   float: right;
   font-size: 2rem;
   text-shadow: 1px 1px 1px white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 body .content .desktop .gallery--clicked .modal-content .close:hover, body .content .desktop .gallery--clicked .modal-content .close:focus {
   background-color: #215cd8;
@@ -114,6 +124,71 @@ body .content .desktop .gallery img {
   height: 10rem;
   width: 15rem;
   padding: 0 0.5rem 0 0.5rem;
+}
+body .content .desktop .riddle {
+  display: none; /* Hidden by default */
+}
+body .content .desktop .riddle--clicked {
+  height: 25rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute; /* According to the regular document flow */
+  left: 10%;
+  top: 35%;
+  z-index: 1; /* Sit on top */
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  align-items: center;
+  margin-top: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 3px;
+}
+body .content .desktop .riddle--clicked h2 {
+  background-color: gray;
+  color: aliceblue;
+  padding: 1rem;
+  margin-top: 0;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px black;
+}
+body .content .desktop .riddle--clicked label {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.6);
+  color: aliceblue;
+  padding: 2rem;
+  border-radius: 50%;
+  text-shadow: 2px 2px 2px black;
+}
+body .content .desktop .riddle--clicked .close {
+  color: black;
+  background-color: #749ef8;
+  padding: 0 0.5rem 0 0.5rem;
+  border-radius: 10%;
+  align-self: flex-end;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px white;
+}
+body .content .desktop .riddle--clicked .close:hover, body .content .desktop .riddle--clicked .close:focus {
+  background-color: #215cd8;
+  text-decoration: none;
+  cursor: pointer;
+}
+body .content .desktop .riddle--clicked .buttons {
+  display: flex;
+  align-content: end;
+}
+body .content .desktop .riddle--clicked .buttons .answer {
+  margin: 1rem;
+  height: 2rem;
+  width: max-content;
+  background-color: rgb(225, 225, 225);
+  box-shadow: 1px 1px gray;
+}
+body .content .desktop .riddle--clicked .buttons .answer:hover {
+  background-color: rgb(189, 189, 189);
+  box-shadow: 2px 2px rgb(92, 92, 92);
 }
 body .content footer {
   background-image: linear-gradient(#749ef8, #215cd8, #215cd8, #215cd8);

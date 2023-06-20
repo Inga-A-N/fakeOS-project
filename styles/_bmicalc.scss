@@ -10,20 +10,30 @@
         width: 20rem;
         display: flex;
         flex-direction: column;
+        position: absolute;
+        left: 10%;
         align-items: center;
         row-gap: 0.3rem;
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */;
         border-radius: 5%;
         margin-top: 1rem;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         letter-spacing: 3px;
-        text-shadow: 2px 2px 2px white;
-        
+        color: aliceblue;
+
         h1 {
             background-color: gray;
             // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             color: aliceblue;
             padding: 1rem;
+            margin-top: 0;
+            border-radius: 50%;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        label {
+            background-color: gray;
+            padding: 2%;
             border-radius: 50%;
             text-shadow: 2px 2px 2px black;
         }

@@ -35,6 +35,8 @@ console.log(messageDiv.children);
 const star = document.querySelector("#star")
 console.log(star)
 
+const puzzle = document.querySelector("#puzzle")
+
 const gallery = document.querySelector(".gallery")
 console.log(gallery)
 
@@ -45,6 +47,9 @@ const closeSecret = close[0];
 console.log(closeSecret)
 
 const closeStar = close[1];
+
+const closePuzzle = close[2];
+
 //Making top secret folder button display/close bmi calculator and x close it
 
 topSecret.addEventListener("click", () => {
@@ -73,8 +78,22 @@ star.addEventListener("click", () => {
 
 closeStar.addEventListener("click", () => {
 
-    gallery.classList.remove("gallery--clicked")
+    gallery.classList.toggle("gallery--clicked")
     console.log(gallery)
+})
+
+// Making puzzle folder button open and close puzzle and X close puzzle
+
+puzzle.addEventListener("click", () => {
+
+    riddle.classList.toggle("riddle--clicked")
+    console.log(riddle)
+})
+
+closePuzzle.addEventListener("click", () => {
+
+    riddle.classList.toggle("riddle--clicked")
+    console.log(puzzle)
 })
 
 

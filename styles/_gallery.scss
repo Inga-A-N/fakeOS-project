@@ -4,13 +4,15 @@
 
     &--clicked {
         display: flex;
-        position: relative; /* According to the regular document flow */
+        position: absolute; /* According to the regular document flow */
+        left: 35%;
         z-index: 1; /* Sit on top */
         padding: 1rem 2rem;
         width: max-content; 
         height: max-content;
         border-radius: 2rem; 
         background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
         
 
         .modal-content {
@@ -23,7 +25,7 @@
                 float: right;
                 font-size: 2rem;
                 text-shadow: 1px 1px 1px white;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                
 
                 &:hover,
                 &:focus {
