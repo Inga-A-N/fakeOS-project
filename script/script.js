@@ -1,23 +1,6 @@
 // BMI function - calculates BMI
 // Call it when the user clicks the button in the form
-const bmi = (weight, height) => {
-    let bmindex =  +((weight/((height/100)**2)).toFixed(1));
-    if (weight <=0 || height <= 0){
-        return `Please enter valid numbers`
-    }
-    if (bmindex >= 40) {
-        return `Your body mass index is ${bmindex}\n Status: obese`}
-
-    else if (bmindex > 25){
-            return `Your body mass index is ${bmindex}\n Status: overweigt`}
-
-    else if (bmindex > 18.4){
-            return `Your body mass index is ${bmindex}\n Status: normal`}
-
-    else if (bmindex > 0 && bmindex<=18.4){
-        return `Your body mass index is ${bmindex}\n Status: underweight`}
-    }
-
+import {bmi} from "./bmi.js"
 //DOM
 
 
@@ -40,6 +23,8 @@ const puzzle = document.querySelector("#puzzle")
 const gallery = document.querySelector(".gallery")
 console.log(gallery)
 
+const startBtn = document.querySelector(".startBtn")
+
 const close = document.querySelectorAll(".close")
 console.log(close)
 
@@ -49,6 +34,14 @@ console.log(closeSecret)
 const closeStar = close[1];
 
 const closePuzzle = close[2];
+
+
+
+setInterval(() => {
+    let time = document.getElementById("currentTime");
+    let d = new Date();
+    time.innerHTML = d.toLocaleTimeString("en-AU", {timeStyle: "short", hour12: true});
+}, 1000)
 
 //Making top secret folder button display/close bmi calculator and x close it
 
@@ -95,6 +88,17 @@ closePuzzle.addEventListener("click", () => {
     riddle.classList.toggle("riddle--clicked")
     console.log(puzzle)
 })
+
+// Opening and closing start menu
+
+startBtn.addEventListener("click", () => {
+
+    startMenu.classList.toggle //"startMenu" here is an id from html
+    ("startMenu--clicked")
+    console.log(startBtn)
+})
+
+
 
 
 

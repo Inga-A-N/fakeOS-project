@@ -6,8 +6,9 @@
         display: flex;
         position: absolute; /* According to the regular document flow */
         left: 35%;
+        top: 2%;
         z-index: 1; /* Sit on top */
-        padding: 1rem 2rem;
+        padding: 1% 2%;
         width: max-content; 
         height: max-content;
         border-radius: 2rem; 
@@ -18,19 +19,20 @@
         .modal-content {
             
             .close {
-                color: black;
-                background-color: #749ef8;
+                color: white;
+                // background-color: rgb(192, 56, 56);
                 padding: 0 0.5rem 0 0.5rem;
                 border-radius: 10%;
                 float: right;
                 font-size: 2rem;
-                text-shadow: 1px 1px 1px white;
+                background-image: linear-gradient(white, rgb(192, 56, 56),rgb(192, 56, 56),rgb(192, 56, 56), rgb(192, 56, 56), rgb(192, 56, 56), rgb(192, 56, 56), white);
+                border: 1px solid white;
                 
 
                 &:hover,
                 &:focus {
-                background-color: #215cd8;
-                text-decoration: none;
+                    background-image: linear-gradient(rgb(192, 56, 56), rgb(192, 56, 56));
+                    text-decoration: none;
                 cursor: pointer;
                 }
             }

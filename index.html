@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./script/script.js" defer></script>
+    <script src="./script/script.js" defer type="module"></script>
     <title>Fake OS - WindowsXP</title>
 
 </head>
@@ -17,7 +17,7 @@
 
             <div class="folder">
                 <button type="button" class="folder folder--top-secret" id="topSecret">
-                    <img src="./styles/assets/icons8-top-secret-folder.svg" alt="Top secret folder">
+                    <img src="./styles/assets/My_Documents_2001.webp" alt="Top secret folder">
                 </button>
                 <form class="form">
                     <span class="close">&times;</span>
@@ -35,7 +35,7 @@
             <div class="folder">
 
                 <button class="folder folder--star" id="star">
-                    <img src="./styles/assets/icons8-star-folder.svg" alt="Star folder" >
+                    <img src="./styles/assets/My_Pictures_WinXP.webp" alt="Star folder" >
                 </button>
 
                 <div class="gallery" id="gallery">
@@ -52,7 +52,7 @@
             <div class="folder">
 
                 <button class="folder folder--puzzle" id="puzzle">
-                    <img src="./styles/assets/icons8-puzzle-folder.svg" alt="Puzzle folder" >
+                    <img src="./styles/assets/Games_win-10.webp" alt="Puzzle folder" >
                 </button>
 
                 <div class="riddle" id="riddle">
@@ -65,17 +65,21 @@
                         <button class="answer showAnswer">Show answer</button>
                     </div> 
                 </div>
-
-                
-                
+    
             </div>
 
+        </div>
+
+        <div class="startMenu" id="startMenu">
+            <img src="./styles/assets/Screenshot 2023-06-21 204903.jpg" alt="Start menu">
         </div>
 
     
 
         <footer>
-            <button class="startBtn"><img src="./styles/assets/icons8-windows-xp.svg" alt="Start button" id="windowsLogo">start</button>
+            <button class="startBtn" ><img src="./styles/assets/icons8-windows-xp.svg" alt="Start button" id="windowsLogo">start</button>
+
+            <span id="currentTime"></span>
         </footer>
 
     </div>

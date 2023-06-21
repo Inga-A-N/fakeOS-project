@@ -1,22 +1,21 @@
 
 // bmi function
 
-const bmi = (weight, height) => {
-    let bmindex =  +((weight/((height/100)**2)).toFixed(1));
+export const bmi = (weight, height) => {
+        let bmindex =  +((weight/((height/100)**2)).toFixed(1));
+        if (weight <=0 || height <= 0){
+            return `Please enter valid numbers`
+        }
+        if (bmindex >= 40) {
+            return `Your body mass index is ${bmindex}\n Status: obese`}
     
-    if (bmindex<=18.4){
+        else if (bmindex > 25){
+                return `Your body mass index is ${bmindex}\n Status: overweigt`}
+    
+        else if (bmindex > 18.4){
+                return `Your body mass index is ${bmindex}\n Status: normal`}
+    
+        else if (bmindex > 0 && bmindex<=18.4){
             return `Your body mass index is ${bmindex}\n Status: underweight`}
-
-    else if (bmindex< 25){
-            return `Your body mass index is ${bmindex}\n Status: normal`}
-
-    else if (bmindex < 40){
-            return `Your body mass index is ${bmindex}\n Status: overweight`}
-
-    else {
-            return `Your body mass index is ${bmindex}\n Status: obese`
-
-    }
-    }
-
-console.log(bmi(58, 165))
+        }
+    
