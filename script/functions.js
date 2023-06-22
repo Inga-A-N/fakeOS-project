@@ -18,4 +18,15 @@ export const bmi = (weight, height) => {
         else if (bmindex > 0 && bmindex<=18.4){
             return `Your body mass index is ${bmindex}\n Status: underweight`}
         }
+
+    export const puzzleAnswer = (answer) => {
+        const x = "queue";
+        console.log(answer.trim().toLowerCase());
+        // return answer.trim().toLowerCase()===x? "Correct!":"Nope"
+        return answer.trim().toLowerCase()===x
+}
+
+console.log(puzzleAnswer("queue"))
+
+
     

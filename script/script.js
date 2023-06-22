@@ -1,6 +1,7 @@
 // BMI function - calculates BMI
 // Call it when the user clicks the button in the form
-import {bmi} from "./bmi.js"
+import {bmi} from "./functions.js"
+import {puzzleAnswer} from "./functions.js"
 //DOM
 
 
@@ -22,6 +23,12 @@ const puzzle = document.querySelector("#puzzle")
 
 const gallery = document.querySelector(".gallery")
 console.log(gallery)
+
+const answerRiddle = document.querySelector("#answerRiddle")
+
+const showAnswer = document.querySelector("#showAnswer")
+
+const msgForAnswer = document.querySelector("#msgForAnswer")
 
 const startBtn = document.querySelector(".startBtn")
 
@@ -100,7 +107,7 @@ startBtn.addEventListener("click", () => {
 
 
 
-
+// Making BMI calculator work
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -111,11 +118,6 @@ form.addEventListener("submit", (event) => {
     const height = formData.get("height");
     
     let messageStr = bmi(weight, height);
-
-    
-    // const bmiCalc = bmi(weight, height);
-
-    // bmiCalc();
 
     if (messageDiv.children.length > 0) {
         messageDiv.removeChild(document.querySelector("#msg"));
@@ -138,6 +140,86 @@ form.addEventListener("submit", (event) => {
     form.reset();
 
 })
+
+// Making the puzzle work
+answerRiddle.addEventListener("click", () => {
+    const answer = document.getElementById("answer").value;
+    let displayResult = puzzleAnswer(answer);
+    let messageAns = "";
+    console.log(displayResult)
+
+    console.log(answerRiddle)
+
+    if (msgForAnswer.children.length > 0) {
+        if (document.querySelector("#ansMsg")){
+            msgForAnswer.removeChild(document.querySelector("#ansMsg"))
+        }
+        else if (document.querySelector("#showAnsMsg")){
+            msgForAnswer.removeChild(document.querySelector("#showAnsMsg"))
+        }
+    }
+
+    if (displayResult){
+       messageAns = "Correct!";
+    }else {
+        messageAns = "Wrong answer"
+    }
+
+    
+
+    // create a p tag to add to the page
+    const ansPara = document.createElement("p");
+    ansPara.id = "ansMsg";
+
+    // create a text node from messageSTr for the p tag
+    const textForAnswer = document.createTextNode(messageAns);
+
+    // tell the text to go inside my paragraph
+    ansPara.appendChild(textForAnswer);
+
+    // tell teh p tag where to go on the page
+    msgForAnswer.appendChild(ansPara);
+
+    // clear the from
+    document.getElementById("answer").value = "";
+
+
+})
+
+showAnswer.addEventListener("click", () => {
+    
+    const showCorrect = "queue"
+    console.log(showCorrect)
+
+    if (msgForAnswer.children.length > 0) {
+        if (document.querySelector("#ansMsg")){
+            msgForAnswer.removeChild(document.querySelector("#ansMsg"))
+        }
+        else if (document.querySelector("#showAnsMsg")){
+            msgForAnswer.removeChild(document.querySelector("#showAnsMsg"))
+        }
+        
+    }
+
+    // create a p tag to add to the page
+    const showAnsPara = document.createElement("p");
+    showAnsPara.id = "showAnsMsg";
+
+    // create a text node from messageSTr for the p tag
+    const textForShowAnswer = document.createTextNode(showCorrect);
+
+    // tell the text to go inside my paragraph
+    showAnsPara.appendChild(textForShowAnswer);
+
+    // tell teh p tag where to go on the page
+    msgForAnswer.appendChild(showAnsPara);
+
+    // clear the from
+    // document.getElementById("answer").value = "";
+
+
+})
+
 
 
 
