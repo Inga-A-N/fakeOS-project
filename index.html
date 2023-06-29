@@ -1,88 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./script/script.js" defer type="module"></script>
     <title>Fake OS - WindowsXP</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="content">
-        <a href="https://icons8.com/"></a> 
+      <a href="https://icons8.com/"></a>
 
-        <div class="desktop" id="desktop">
-
-            <div class="folder">
-                <button type="button" class="folder folder--top-secret" id="topSecret">
-                    <img src="./styles/assets/My_Documents_2001.webp" alt="Top secret folder">
-                </button>
-                <form class="form">
-                    <span class="close">&times;</span>
-                    <h1>BMI Calculator</h1>
-                    <label for="weight">Weight: </label>
-                    <input type="text" placeholder="Weight in kg" name="weight" id="weight">
-                    <label for="height">Height: </label>
-                    <input type="text" placeholder="Height in cm" name="height" id="height">
-                    <input type="submit" class="submit" value="Calculate">
-                    <div class="message" id="message"></div>
-                </form>
-            </div>
-            
-
-            <div class="folder">
-
-                <button class="folder folder--star" id="star">
-                    <img src="./styles/assets/My_Pictures_WinXP.webp" alt="Star folder" >
-                </button>
-
-                <div class="gallery" id="gallery">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>   
-                        <img src="./styles/assets/10-Best-Australian-Natural-Attractions-Banner-v2.jpg"/>
-                        <img src="./styles/assets/Spencer-Lake-Australia.jpg"/>
-                        <img src="./styles/assets/Waterfalls-In-Australia-cover.jpg"/>
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="folder">
-
-                <button class="folder folder--puzzle" id="puzzle">
-                    <img src="./styles/assets/Games_win-10.webp" alt="Puzzle folder" >
-                </button>
-
-                <div class="riddle" id="riddle">
-                    <span class="close">&times;</span>
-                    <h2>Solve The Riddle</h2>
-                    <label for="anser">What English word retains the same pronunciation, even after you take away four of its five letters?</label>
-                    <input type="text" name="answer" id="answer" placeholder="Type your answer here">
-                   <div class="buttons">
-                        <button class="answer" id="answerRiddle">Submit</button>
-                        <button class="answer" id="showAnswer">Show answer</button>
-                    </div> 
-                    <div class="message" id="msgForAnswer"></div>
-                </div>
-    
-            </div>
-
+      <div class="desktop" id="desktop">
+        <div class="folder">
+          <button
+            type="button"
+            class="folder folder--top-secret"
+            id="topSecret"
+          >
+            <img
+              src="./styles/assets/My_Documents_2001.webp"
+              alt="Top secret folder"
+            />
+          </button>
+          <form class="form">
+            <span class="close">&times;</span>
+            <h1>BMI Calculator</h1>
+            <label for="weight">Weight: </label>
+            <input
+              type="text"
+              placeholder="Weight in kg"
+              name="weight"
+              id="weight"
+            />
+            <label for="height">Height: </label>
+            <input
+              type="text"
+              placeholder="Height in cm"
+              name="height"
+              id="height"
+            />
+            <input type="submit" class="submit" value="Calculate" />
+            <div class="message" id="message"></div>
+          </form>
         </div>
 
-        <div class="startMenu" id="startMenu">
-            <img src="./styles/assets/Screenshot 2023-06-21 204903.jpg" alt="Start menu">
+        <div class="folder">
+          <button class="folder folder--star" id="star">
+            <img
+              src="./styles/assets/My_Pictures_WinXP.webp"
+              alt="Star folder"
+            />
+          </button>
+
+          <div class="gallery" id="gallery">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <img
+                src="./styles/assets/10-Best-Australian-Natural-Attractions-Banner-v2.jpg"
+              />
+              <img src="./styles/assets/Spencer-Lake-Australia.jpg" />
+              <img src="./styles/assets/Waterfalls-In-Australia-cover.jpg" />
+            </div>
+          </div>
         </div>
 
-    
+        <div class="folder">
+          <button class="folder folder--puzzle" id="puzzle">
+            <img src="./styles/assets/Games_win-10.webp" alt="Puzzle folder" />
+          </button>
 
-        <footer>
-            <button class="startBtn" ><img src="./styles/assets/icons8-windows-xp.svg" alt="Start button" id="windowsLogo">start</button>
+          <div class="riddle" id="riddle">
+            <span class="close">&times;</span>
+            <h2>Solve The Riddle</h2>
+            <label for="anser"
+              >What English word retains the same pronunciation, even after you
+              take away four of its five letters?</label
+            >
+            <input
+              type="text"
+              name="answer"
+              id="answer"
+              placeholder="Type your answer here"
+            />
+            <div class="buttons">
+              <button class="answer" id="answerRiddle">Submit</button>
+              <button class="answer" id="showAnswer">Show answer</button>
+            </div>
+            <div class="message" id="msgForAnswer"></div>
+          </div>
+        </div>
+      </div>
 
-            <span id="currentTime"></span>
-        </footer>
+      <div class="startMenu" id="startMenu">
+        <img
+          src="./styles/assets/Screenshot 2023-06-21 204903.jpg"
+          alt="Start menu"
+        />
+      </div>
 
+      <footer>
+        <button class="startBtn">
+          <img
+            src="./styles/assets/icons8-windows-xp.svg"
+            alt="Start button"
+            id="windowsLogo"
+          />start
+        </button>
+
+        <span id="currentTime"></span>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

@@ -1,9 +1,7 @@
 .riddle {
+  display: none; /* Hidden by default */
 
-    display: none; /* Hidden by default */
-
-    &--clicked {
-
+  &--clicked {
     height: 60%;
     width: 22%;
     display: flex;
@@ -13,87 +11,91 @@
     top: 28%;
     z-index: 1; /* Sit on top */
     padding: 1% 2%;
-    border-radius: 2em; 
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-radius: 2em;
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     align-items: center;
     margin-top: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     letter-spacing: 3px;
     overflow: scroll;
     // text-shadow: 2px 1px white;
 
     h2 {
-        text-align: center;
-        background-color: gray;
-        // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: aliceblue;
-        padding: 3%;
-        margin-top: 0;
-        border-radius: 50%;
-        text-shadow: 2px 2px 2px black;
-        font-size: 130%;
+      text-align: center;
+      background-color: gray;
+      // font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: aliceblue;
+      padding: 3%;
+      margin-top: 0;
+      border-radius: 50%;
+      text-shadow: 2px 2px 2px black;
+      font-size: 130%;
     }
 
     label {
-        text-align: center;
-        background-color: rgb(128, 128, 128, 0.6);
-        color: aliceblue;
-        padding: 5%;
-        border-radius: 50%;
-        text-shadow: 2px 2px 2px black;
+      text-align: center;
+      background-color: rgb(128, 128, 128, 0.6);
+      color: aliceblue;
+      padding: 5%;
+      border-radius: 50%;
+      text-shadow: 2px 2px 2px black;
     }
 
     p {
-        text-align: center;
-        background-color: rgb(128, 128, 128, 0.4);
-        color: aliceblue;
-        padding: 1rem;
-        border-radius: 50%;
-        text-shadow: 2px 2px 2px black;
+      text-align: center;
+      background-color: rgb(128, 128, 128, 0.4);
+      color: aliceblue;
+      padding: 1rem;
+      border-radius: 50%;
+      text-shadow: 2px 2px 2px black;
     }
 
-        
+    .close {
+      align-self: flex-end;
+      // float: right;
+      font-size: 150%;
+      text-shadow: 1px 1px 1px white;
+      color: white;
+      background-color: rgb(192, 56, 56);
+      padding: 0 0.5rem 0 0.5rem;
+      border-radius: 10%;
+      float: right;
+      font-size: 2rem;
+      background-image: linear-gradient(
+        white,
+        rgb(192, 56, 56),
+        rgb(192, 56, 56),
+        rgb(192, 56, 56),
+        rgb(192, 56, 56),
+        rgb(192, 56, 56),
+        rgb(192, 56, 56),
+        white
+      );
+      border: 1px solid white;
 
-        .close {
-            align-self: flex-end;
-            // float: right;
-            font-size: 150%;
-            text-shadow: 1px 1px 1px white;
-            color: white;
-            background-color: rgb(192, 56, 56);
-            padding: 0 0.5rem 0 0.5rem;
-            border-radius: 10%;
-            float: right;
-            font-size: 2rem;
-            background-image: linear-gradient(white, rgb(192, 56, 56),rgb(192, 56, 56),rgb(192, 56, 56), rgb(192, 56, 56), rgb(192, 56, 56), rgb(192, 56, 56), white);
-            border: 1px solid white;
-            
-
-            &:hover,
-            &:focus {
-                background-image: linear-gradient(rgb(192, 56, 56), rgb(192, 56, 56));
-                text-decoration: none;
-            cursor: pointer;
-            }
-        }
-
-        .buttons {
-
-            display: flex;
-            align-content: end;
-
-            .answer{
-                margin: 1rem;
-                height: 2rem;
-                width: max-content;
-                background-color: rgb(225, 225, 225);
-                box-shadow: 1px 1px gray;
-                &:hover {
-                    background-color: rgb(189, 189, 189);
-                    box-shadow: 2px 2px rgb(92, 92, 92);
-                }
-            }
-        }
+      &:hover,
+      &:focus {
+        background-image: linear-gradient(rgb(192, 56, 56), rgb(192, 56, 56));
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
-    
+
+    .buttons {
+      display: flex;
+      align-content: end;
+
+      .answer {
+        margin: 1rem;
+        height: 2rem;
+        width: max-content;
+        background-color: rgb(225, 225, 225);
+        box-shadow: 1px 1px gray;
+        &:hover {
+          background-color: rgb(189, 189, 189);
+          box-shadow: 2px 2px rgb(92, 92, 92);
+        }
+      }
+    }
+  }
 }
