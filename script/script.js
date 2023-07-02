@@ -93,7 +93,7 @@ closePuzzle.addEventListener("click", () => {
 startBtn.addEventListener("click", () => {
   startMenu.classList.toggle(
     //"startMenu" here is an id from html
-    "startMenu--clicked"
+    "startMenu--active"
   );
   console.log(startBtn);
 });
@@ -193,7 +193,7 @@ showAnswer.addEventListener("click", () => {
   // tell the text to go inside my paragraph
   showAnsPara.appendChild(textForShowAnswer);
 
-  // tell teh p tag where to go on the page
+  // tell the p tag where to go on the page
   msgForAnswer.appendChild(showAnsPara);
 
   // clear the from
